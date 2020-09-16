@@ -37,4 +37,8 @@ public class Library {
         }
         return true;
     }
+
+    public List<Book> getBooks() {
+        return books;
+    }
 }
