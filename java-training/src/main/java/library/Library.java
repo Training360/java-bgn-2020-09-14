@@ -41,4 +41,14 @@ public class Library {
     public List<Book> getBooks() {
         return books;
     }
+
+    public void save() {
+        LibraryRepository repository = new LibraryRepository();
+        repository.writeBooks(books);
+    }
+
+    public void load() {
+        LibraryRepository repository = new LibraryRepository();
+        books = repository.readBooks();
+    }
 }

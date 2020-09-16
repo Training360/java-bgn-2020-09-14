@@ -12,6 +12,8 @@ public class LibraryScreen {
         System.out.println("1. Könyv felvétele");
         System.out.println("2. Könyvek listázása");
         System.out.println("3. Kilépés");
+        System.out.println("4. Mentés");
+        System.out.println("5. Betöltés");
     }
 
     public void createBook() {
@@ -32,5 +34,17 @@ public class LibraryScreen {
             System.out.println(book.getAuthor() + " - " + book.getTitle() + " ("
                 + book.getRegNumber() + ")");
         }
+    }
+
+    public void save() {
+        System.out.println("Mentek");
+        library.save();
+        System.out.println("Mentés kész");
+    }
+
+    public void load() {
+        System.out.println("Betöltök");
+        library.load();
+        System.out.println("Betöltés kész");
     }
 }

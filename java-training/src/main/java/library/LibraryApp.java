@@ -17,6 +17,12 @@ public class LibraryApp {
             if (selectedMenu.equals("2")) {
                 screen.printBooks();
             }
+            if (selectedMenu.equals("4")) {
+                screen.save();
+            }
+            if (selectedMenu.equals("5")) {
+                screen.load();
+            }
         }
     }
 }
